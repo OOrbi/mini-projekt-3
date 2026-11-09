@@ -1,0 +1,78 @@
+    /* Reset i podstawowe ustawienia układu */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Wygląd karty */
+.card {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.card .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Przyciski */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Motyw ciemny */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode button {
+    background-color: #bb86fc;
+    color: #000000;
+}
+
+body.dark-mode button:hover {
+    background-color: #9954e6;
+}
